@@ -1,0 +1,143 @@
+.but_mod{
+    height: 100px;
+    width: auto;
+    background-color: #161623;
+    /* background-color: #5b5ba1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tot{
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0052D4; */
+    color: #fff;
+    font-weight: 500;
+    /* box-shadow: 2px 2px 2px rgb(181, 228, 247); */
+    
+}
+.cal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90vh;
+    background: #161623;
+    overflow: hidden;
+}
+.cal::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#65C7F7,#0052D4);
+    clip-path: circle(35% at right 70%);
+}
+.cal::after
+{
+    content: '';
+    position: absolute;
+    top: 3.1rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#9CECFB,#65C7F7);
+    clip-path: circle(12% at 5% 5%);
+}
+.subcal{
+    position: relative;
+    width: 70%;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+@media screen and (max-width: 700px) {
+    .but_mod{
+        height: auto;
+        width: auto;
+        background-color: #161623;
+        /* background-color: #5b5ba1; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        
+    }
+    .tot{
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #0052D4; */
+        color: #fff;
+        font-weight: 200;
+        /* box-shadow: 2px 2px 2px rgb(181, 228, 247); */
+        
+    }
+    .cal{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        background: #161623;
+        overflow: hidden;
+    }
+    /* .cal::before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#65C7F7,#0052D4);
+        clip-path: circle(35% at right 70%);
+    }
+    .cal::after
+    {
+        content: '';
+        position: absolute;
+        top: 3.1rem;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#9CECFB,#65C7F7);
+        clip-path: circle(12% at 5% 5%);
+    } */
+    .subcal{
+        position: relative;
+        width: 70%;
+        margin: 30px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(5px);
+    }
+    
+}
