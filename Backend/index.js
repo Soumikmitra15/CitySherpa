@@ -58,6 +58,8 @@ const quizSchema = new mongoose.Schema({
   ],
 });
 
+const JWT_SECRET = 'krwmfki348i5';
+
 const saltRounds = 10; // Define the saltRounds value for bcrypt
 
 const city = mongoose.model("test", citySchema);
